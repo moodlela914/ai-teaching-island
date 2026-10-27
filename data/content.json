@@ -1062,5 +1062,119 @@
       "Gemini AI 認證教育工作者"
     ]
   },
-  "editorialNote": "本站依使用者提供教材改寫；工具名稱、操作路徑及限制保留原稿，未另行查證現行服務。實際功能依使用的服務、帳號與版本為準。補寫學習目標標示「示意」，題目標示「自編練習題」。"
+  "editorialNote": "本站依使用者提供教材改寫；工具名稱、操作路徑及限制保留原稿，未另行查證現行服務。實際功能依使用的服務、帳號與版本為準。補寫學習目標標示「示意」，題目標示「自編練習題」。",
+  "residents": [
+    {
+      "id": "resident-01",
+      "name": "點點",
+      "island": "island-01",
+      "concept": "聚焦提問",
+      "text": "提問時一起交代年級、主題、時間與活動限制，才能讓靈感更貼近真實課堂。教材以小六、40分鐘、無複雜道具的破冰活動示範。",
+      "topic": 2
+    },
+    {
+      "id": "resident-02",
+      "name": "晴晴",
+      "island": "island-01",
+      "concept": "網頁統整",
+      "text": "從當前閱讀的網頁摘要出發，再依需求整理多個分頁的資訊，將閱讀內容連結到教學發想。工具操作依本站原稿介紹。",
+      "topic": 1
+    },
+    {
+      "id": "resident-03",
+      "name": "沐沐",
+      "island": "island-02",
+      "concept": "角色與系統指令",
+      "text": "Gem 的系統指令可以交代助教角色、教學風格與輸出要求，讓重複任務有一致的起點。",
+      "topic": 1
+    },
+    {
+      "id": "resident-04",
+      "name": "可可",
+      "island": "island-02",
+      "concept": "固定輸入與格式",
+      "text": "把學科、年級、單元設為固定輸入，明確要求情境、探究問題與四級評量規準；資訊不足時先詢問。",
+      "topic": 2
+    },
+    {
+      "id": "resident-05",
+      "name": "齒齒",
+      "island": "island-03",
+      "concept": "參數化",
+      "text": "Key-Value 參數把需求說清楚，例如單元、年級、節數、認知階層與輸出格式，讓程序有可檢核的條件。",
+      "topic": 1
+    },
+    {
+      "id": "resident-06",
+      "name": "序序",
+      "island": "island-03",
+      "concept": "多技能串聯",
+      "text": "教案先完成，再交給評量規準 Skill，最後製作互動網站。每一階段先確認輸出，才適合交給下一階段。",
+      "topic": 2
+    },
+    {
+      "id": "resident-07",
+      "name": "米米",
+      "island": "island-04",
+      "concept": "Persona",
+      "text": "Gems 的角色與語氣設定，適合需要教學風格、情境故事與彈性文字的工作；複雜限制仍需要檢查。",
+      "topic": 0
+    },
+    {
+      "id": "resident-08",
+      "name": "洛洛",
+      "island": "island-04",
+      "concept": "Workflow 與檢核",
+      "text": "Skill 用結構化參數、步驟與檢核封裝方法。這能提高一致性，卻不等於保證零錯誤，產出仍須確認。",
+      "topic": 1
+    },
+    {
+      "id": "resident-09",
+      "name": "桃桃",
+      "island": "island-05",
+      "concept": "文字轉教材檔案",
+      "text": "確認來源文本後，再規劃文件、簡報、結構圖與題庫等不同成果。Spark（任務）在教材中負責這段生產流程。",
+      "topic": 0
+    },
+    {
+      "id": "resident-10",
+      "name": "包包",
+      "island": "island-05",
+      "concept": "單元歸檔",
+      "text": "將同一單元的多種成果放進 Google Drive 專屬單元資料夾，讓教學檔案能一起被找到與使用。",
+      "topic": 2
+    },
+    {
+      "id": "resident-11",
+      "name": "鈴鈴",
+      "island": "island-06",
+      "concept": "事件觸發",
+      "text": "工作流先定義什麼事件會啟動它，例如表單提交，再串接分析、寫紀錄與寄回饋等動作。",
+      "topic": 1
+    },
+    {
+      "id": "resident-12",
+      "name": "衡衡",
+      "island": "island-06",
+      "concept": "五向度評閱",
+      "text": "教材的評閱範例包含概念精確、批判思辨、實例佐證、素養實踐與邏輯表達五向度，回饋應清楚且可行動。",
+      "topic": 2
+    },
+    {
+      "id": "resident-13",
+      "name": "星星",
+      "island": "island-07",
+      "concept": "主動式單次產出",
+      "text": "老師備課時主動喚醒任務、提供當次素材，生成一套教材，這與長期等待事件觸發的工作方式不同。",
+      "topic": 0
+    },
+    {
+      "id": "resident-14",
+      "name": "流流",
+      "island": "island-07",
+      "concept": "雙引擎分工",
+      "text": "課前以任務生產教材；課中與課後以 Workspace Studio 處理資料流轉與派發。依工作階段選擇適合的引擎。",
+      "topic": 2
+    }
+  ]
 }
