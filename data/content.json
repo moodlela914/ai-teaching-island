@@ -18,24 +18,24 @@
     "description": "總複習島：從各課題庫輪流抽題做跨課測驗，並顯示全部課程的學習進度。"
   },
   "themes": {
-    "style": "馬卡龍海洋",
+    "style": "可愛萬聖節小島",
     "font": "手寫感",
-    "primary": "#2f7a6b",
-    "accent": "#d9792f",
+    "primary": "#6b4d84",
+    "accent": "#ed9d50",
     "backgrounds": [
       {
         "name": "晨光",
-        "background": "#f6f0e4",
+        "background": "#fff4e3",
         "default": true
       },
       {
         "name": "海霧",
-        "background": "#dcebee",
+        "background": "#efe7f6",
         "default": false
       },
       {
         "name": "夜海",
-        "background": "#16222e",
+        "background": "#231d36",
         "default": false
       }
     ]
