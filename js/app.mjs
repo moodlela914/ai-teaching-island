@@ -38,7 +38,7 @@ function fallback(){$('#map-status').hidden=false;$('#map-status').innerHTML='�
 function setupHost(){
  const dialog=document.createElement('dialog');dialog.id='host-dialog';dialog.className='host-dialog';dialog.setAttribute('aria-labelledby','host-title');dialog.innerHTML=`<button class="dialog-close icon-button" aria-label="關閉焰兒問答">✕</button><div class="host-heading"><img src="assets/mascot.svg" alt="島主焰兒" width="66" height="76"><div><span class="eyebrow">YOUR ISLAND HOST</span><h2 id="host-title">問問島主焰兒</h2><p>熟悉這座群島，陪你找到下一步。</p></div></div><p class="small host-note">依本站教材與功能說明回答，附上課程出處；不連線外部 AI，不直接提供測驗答案。</p><div id="host-messages" class="host-messages" aria-live="polite" aria-label="與焰兒的對話"></div><div class="host-suggestions"><button type="button" data-ask="怎麼取得證書？">怎麼拿證書？</button><button type="button" data-ask="Gems 和 Skill 差在哪？">Gems vs Skill</button><button type="button" data-ask="任務和 Studio 怎麼選？">任務 vs Studio</button><button type="button" data-ask="我的進度存在哪裡？">我的進度存在哪？</button></div><form id="host-form"><label class="sr-only" for="host-question">向島主焰兒提問</label><input id="host-question" maxlength="240" autocomplete="off" placeholder="問問課程、工具或網站怎麼用…" required><button class="primary" type="submit">送出</button></form>`;document.body.append(dialog);
  appendHostMessage('host','嗨，我是島主焰兒！從課程怎麼選，到測驗與證書的使用方法，都可以問我。');
- $('#host-guide').addEventListener('click',showHost);
+
  $('#host-form').addEventListener('submit',e=>{e.preventDefault();askHost($('#host-question').value);});
  dialog.addEventListener('click',e=>{const b=e.target.closest('[data-ask]');if(b)askHost(b.dataset.ask);});
 }
