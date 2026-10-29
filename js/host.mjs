@@ -6,8 +6,8 @@ export function answerIslandQuestion(input,data){const q=String(input).trim().to
  const explicit=gem&&skill?'island-04':task&&studio?'island-07':studio?'island-06':task?'island-05':skill?'island-03':gem?'island-02':q.includes('gemini')?'island-01':null;
  if(explicit&&!includesAny(q,['證書','測驗','考試','總複習','已讀','我的進度','本站','這個網站'])){const c=data.courses.find(c=>c.id===explicit);return result(c.name+'：'+c.blocks.map(b=>b.text).join('\n\n')+'\n\n以上依本站教材整理，操作保留原稿，實際服務依帳號與版本為準。',[explicit]);}
  if(includesAny(q,['你是誰','島主','焰兒','介紹自己']))return result('我是焰兒，這座教學群島的島主！我依本站教材與功能說明協助導覽，能帶你找課程、測驗與資源；右上「？」內的圖文是純說明；提問請先選一座島，再點島上焰兒。我不會連到外部 AI，也不直接揭露測驗答案。',['center']);
- if(includesAny(q,['證書','證明','畢業','75']))return result('要領取學習完成紀念證書，七課都標記已讀，而且各課測驗至少 75 分。到中央廣場的「進度與證書」輸入姓名，就能下載 SVG 或列印／另存 PDF；這是學習紀念，不代表官方認證。',['center']);
- if(includesAny(q,['進度','存在哪','存哪裡','保存','儲存','重置','接續','不同電腦','換電腦']))return result('閱讀紀錄與測驗最高分保存在目前瀏覽器。重新整理會保留；換瀏覽器或裝置不會自動同步。中央廣場可查看與清除紀錄。若瀏覽器拒絕儲存，會提示「僅本次有效」，這次操作仍可繼續，但重新整理後不會保留。',['center']);
+ if(includesAny(q,['證書','證明','畢業','75']))return result('要領取學習完成紀念證書，七課都標記已讀，而且各課測驗至少 75 分。到中央廣場的「進度與證書」輸入姓名，就能下載 PNG 或列印／另存 PDF；這是學習紀念，不代表官方認證。',['center']);
+ if(includesAny(q,['進度','存在哪','存哪裡','保存','儲存','重置','接續','不同電腦','換電腦']))return result('閱讀紀錄與測驗最高分保存在目前瀏覽器。重新整理會保留；換瀏覽器或裝置不會自動同步。中央廣場「進度與證書」可匯出 JSON 備份，換裝置後匯入接續；會合併已讀並保留最高分，也可清除紀錄。若瀏覽器拒絕儲存，會提示「僅本次有效」，這次操作仍可繼續，但重新整理後不會保留。',['center']);
  if(includesAny(q,['控制列','收起設定','隱藏設定','展開設定']))return result('右上「控制列」按鈕可顯示或隱藏上方控制列；其中有底色、日夜光線、減少動態、音樂、音量和文字清單。焰兒介紹及操作說明收進右上「？」。',['center']);
  if(includesAny(q,['清單','搜尋','找課','分類','段落']))return result('按下上方控制列的「文字清單」，就能展開七座課程島，搜尋關鍵字，點選章節直接讀教材。旁邊的課程清單也能依三個海域篩選，不用操作 3D 就能讀完全部課程。',['center']);
  if(includesAny(q,['學習單','markdown','開放題']))return result('本站已移除學習單功能，每課只有教材與隨堂測驗；七課已讀、每課測驗至少 75 分即可領取紀念證書。教材中外部工具製作學習單的範例仍保留。',['center']);
