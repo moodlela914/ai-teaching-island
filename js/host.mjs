@@ -14,7 +14,7 @@ export function answerIslandQuestion(input,data){const q=String(input).trim().to
  if(includesAny(q,['測驗','考試','總複習','抽題','分數','及格']))return result('每課有四題隨堂測驗，提交後會顯示缺答、分數與逐題解析，並保留最高分。中央廣場的總複習每次從七課各抽一題，共七題；證書資格仍以各課測驗達 75 分為準。',['center']);
  if(includesAny(q,['白天','夜晚','夜海','黃昏','主題','色調','日夜','萬聖節','南瓜','蝙蝠','巫婆帽']))return result('現在是可愛萬聖節小島，使用奶油橘、薰衣草紫與鼠尾草綠，島上有笑臉南瓜、巫婆帽屋頂與空中蝙蝠。開啟「減少動態」也會停止蝙蝠飛行及振翅。上方控制列有晨光、海霧、夜海三種底色，以及白天／夜晚開關與光線選單。選夜海時會預設夜晚光線，之後還能獨立改成白天或黃昏。你的選擇會保存在這個瀏覽器。',['center']);
  if(includesAny(q,['人物','居民','島民','島嶼','點島','建築','放大','小人','散步','走路','橋','旋轉','縮放','全景','動態','暈']))return result('先點島名或島面聚焦放大，再點主建築讀教材。聚焦後可點14位具名島民的頭頂提示，看各自不同的關鍵概念；每座島也都有沿步道走動的焰兒可提問。島民沿環形步道與橋行走，開啟「減少動態」會暫停，按「回到全景」可重新選島。',['center']);
- if(includesAny(q,['音樂','聲音','播放']))return result('按下「音樂關閉」才會開始播放你提供的背景音樂 The_Mansion_s_Hollow_Grin，再按一次即可關閉；可用旁邊音量滑桿調整0–100%，網站會記住音量；不會自動播放聲音。',['center']);
+ if(includesAny(q,['音樂','聲音','播放']))return result('按下「開啟音樂」才會開始播放你提供的背景音樂 The_Uninvited_Guest_s_Waltz，再按一次即可關閉；可用旁邊音量滑桿調整0–100%，網站會記住音量；不會自動播放聲音。',['center']);
  if(includesAny(q,['作者','講師','紅焰','黃泓諺','聯絡']))return result('網站作者是紅焰教學，講師為黃泓諺／紅焰。中央廣場有講師學經歷、現任資訊與聯絡連結。',['center']);
  const hasGem=/(?:^|[^a-z])gems?(?:$|[^a-z])/.test(q)||q.includes('助教'),hasSkill=includesAny(q,['skill','技能']),hasTask=includesAny(q,['spark','任務','生產','簡報','文件']),hasStudio=includesAny(q,['studio','workspace','自動化']);
  let preferred=hasGem&&hasSkill?'island-04':hasTask&&hasStudio?'island-07':null;
